@@ -365,3 +365,147 @@ for (el of buy_product) {
   let buy__card = buy_cards(el.img, el.name, el.desc, el.rating, el.raiting);
   buy.append(buy__card);
 }
+
+const special = document.querySelector(".special");
+
+const special_product = [
+  {
+    name: "Оформите карту «Северяночка»",
+    desc: "И получайте бонусы при покупке в магазинах и на сайте",
+    img: "images/special-img1.png",
+  },
+  {
+    name: "Покупайте акционные товары",
+    desc: "И получайте вдвое больше бонусов",
+    img: "images/special-img2.png",
+  },
+];
+
+function special_cards(head, description, image) {
+  // card body
+  const special_cards_body = document.createElement("div");
+  special_cards_body.className = "special__card-body d-flex align-items-center";
+  const special_cards_left = document.createElement("div");
+  special_cards_left.className = "special__card-body__left";
+  special_cards_body.append(special_cards_left);
+
+  const head_content = document.createElement("h3");
+  head_content.textContent = head;
+  special_cards_left.append(head_content);
+
+  const description_text = document.createElement("p");
+  description_text.textContent = description;
+  special_cards_left.append(description_text);
+
+  const special_cards_right = document.createElement("div");
+  special_cards_right.className = "special__card-body__right";
+  special_cards_body.append(special_cards_right);
+
+  const special_cards_img = document.createElement("img");
+  special_cards_img.src = image;
+  special_cards_img.setAttribute("width", "100%");
+  special_cards_right.append(special_cards_img);
+
+  const special_card = document.createElement("div");
+  special_card.setAttribute("class", "special__card");
+  special_card.append(special_cards_body);
+
+  return special_card;
+}
+
+for (el of special_product) {
+  let special__card = special_cards(el.name, el.desc, el.img);
+  special.append(special__card);
+}
+
+const tabsBtn = document.querySelectorAll(".shop_btn");
+const tabsItems = document.querySelectorAll(".map__item");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+  item.addEventListener("click", function () {
+    let currentBtn = item;
+    let tabId = currentBtn.getAttribute("data-tab");
+    let caurrentTab = document.querySelector(tabId);
+
+    if (!currentBtn.classList.contains("active")) {
+      tabsBtn.forEach(function (item) {
+        item.classList.remove("active");
+      });
+      tabsItems.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      currentBtn.classList.add("active");
+      caurrentTab.classList.add("active");
+    }
+  });
+}
+
+document.querySelector(".shop_btn").click();
+
+const articles = document.querySelector(".articles");
+
+const articles_product = [
+  {
+    img: "images/articles-img1.png",
+    date: "05.03.2021",
+    name: "Режим использования масок и перчаток на территории магазинов",
+    desc: 'Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.',
+  },
+  {
+    img: "images/articles-img2.png",
+    date: "05.03.2021",
+    name: 'Весеннее настроение для каждой использования масок и перчаток',
+    desc: "8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.",
+  },
+  {
+    img: "images/articles-img3.png",
+    date: "22.02.2020",
+    name: "ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!",
+    desc: "Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!",
+  },
+];
+
+function articles_cards(image, date, head, description) {
+  // card body
+  const articles = document.createElement("div");
+  articles.className = "article__card";
+  const art_img = document.createElement("img");
+  art_img.src = image;
+  art_img.setAttribute("width", "100%");
+  articles.append(art_img);
+
+  const articlesDesc = document.createElement("div");
+  articlesDesc.className = "article__desc";
+  articles.append(articlesDesc);
+
+  const data = document.createElement("p");
+  data.textContent = date;
+  articlesDesc.append(data);
+
+  const art_head = document.createElement("h3");
+  art_head.textContent = head;
+  articlesDesc.append(art_head);
+
+  const art_desc = document.createElement("p");
+  art_desc.className = "article__description";
+  art_desc.textContent = description;
+  articlesDesc.append(art_desc);
+
+  const button = document.createElement("button");
+  button.className = "article__button";
+  button.textContent = "Подробнее";
+  articlesDesc.append(button);
+
+  const articles_card = document.createElement("div");
+  articles_card.append(articles);
+
+  return articles_card;
+}
+
+for (el of articles_product) {
+  let articles__card = articles_cards(el.img, el.date, el.name, el.desc);
+  articles.append(articles__card);
+}
