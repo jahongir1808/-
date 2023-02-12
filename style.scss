@@ -124,7 +124,15 @@ html {
       }
     }
   }
-} 
+}
+
+@media (max-width: 600px) {
+  .nav__scroll {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 
 .navbar-nav {
   display: grid;
