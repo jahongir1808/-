@@ -282,7 +282,7 @@ const buy_product = [
   {
     img: "images/novelties-img3.png",
     name: "159,99 ₽",
-    desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+    desc: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
     rating: 5,
     raiting: 0,
   },

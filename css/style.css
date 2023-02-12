@@ -6,14 +6,52 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 100px) {
+  :root {
+    font-size: 13px;
+  }
+}
+@media (min-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    font-size: 16px !important;
+  }
+}
 .nav-container {
   padding: 11px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .nav-container {
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .nav-container .nav-catalog p {
+    display: none;
+  }
+  .nav-container .nav-catalog button {
+    padding: 8px !important;
+  }
 }
 .nav-container .nav-catalog button {
   padding: 8px 16px 8px 8px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #ffffff;
   background: #70c05b;
@@ -29,10 +67,10 @@ html {
 }
 .nav-container .nav-input form input {
   padding: 8px 16px;
-  width: 100%;
+  width: 90%;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #8f8f8f;
   background: #ffffff;
@@ -46,11 +84,19 @@ html {
 .nav-container .nav-input form i {
   position: absolute;
   top: 20%;
-  left: 90%;
+  right: 12%;
 }
 .nav-container .nav-right .nav-avatar button {
   border: none;
   background-color: transparent !important;
+}
+@media (max-width: 1000px) {
+  .nav-container .nav-right .nav-avatar p {
+    display: none;
+  }
+  .nav-container .nav-right .nav-avatar button {
+    display: none;
+  }
 }
 .nav-container .nav-right .nav__menus-icons .nav__menu-icon i {
   font-size: 24px;
@@ -58,25 +104,46 @@ html {
 .nav-container .nav-right .nav__menus-icons .nav__menu-icon p {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
   color: #414141;
 }
 
+@media (max-width: 600px) {
+  .nav__scroll {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+  .nav__scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
 .navbar-nav {
-  --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-navbar-color);
-  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
-  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
-  display: flex;
-  gap: 40px;
-  justify-content: space-between !important;
-  flex-direction: row;
+  display: grid;
+  grid-gap: 40px 40px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+}
+@media (max-width: 700px) {
+  .navbar-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .navbar-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .navbar-nav {
+    grid-template-columns: 1fr;
+  }
 }
 
 .navbar {
@@ -114,7 +181,7 @@ html {
 .nav-link {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #414141;
 }
@@ -152,7 +219,7 @@ main {
 main .container h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 150%;
   color: #414141;
 }
@@ -188,28 +255,28 @@ main .container h2 {
 .home-container .card .card__prices h4 {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   color: #414141;
 }
 .home-container .card .card__prices h5 {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #606060;
 }
 .home-container .card .card__prices p {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
   color: #bfbfbf;
 }
 .home-container .card .card__description p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #414141;
 }
@@ -219,7 +286,7 @@ main .container h2 {
   width: 100%;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #70c05b;
   border: 1px solid #70c05b;
@@ -263,14 +330,14 @@ main .container h2 {
 .novelties .novelties__card .novelties__card-descriptions h4 {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 150%;
   color: #414141;
 }
 .novelties .novelties__card .novelties__card-descriptions p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #414141;
 }
@@ -280,7 +347,7 @@ main .container h2 {
   width: 100%;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #70c05b;
   border: 1px solid #70c05b;
@@ -320,14 +387,14 @@ main .container h2 {
 .buy .buy__card .buy__card-descriptions h4 {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   color: #414141;
 }
 .buy .buy__card .buy__card-descriptions p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #414141;
 }
@@ -337,7 +404,7 @@ main .container h2 {
   width: 100%;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #70c05b;
   border: 1px solid #70c05b;
