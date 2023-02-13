@@ -6,6 +6,14 @@ html {
   scroll-behavior: smooth;
 }
 
+li {
+  list-style-type: none;
+}
+a {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
 @media (min-width: 100px) {
   :root {
     font-size: 13px;
@@ -222,7 +230,8 @@ html {
   position: relative;
 }
 
-#navbarMenu {
+#navbarMenu,
+#footerMenu {
   position: absolute;
   padding: 40px 70px;
   width: 100%;
@@ -236,6 +245,19 @@ html {
   top: 0px;
   width: 100%;
   z-index: 1;
+}
+
+.footer__fixed-menus {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  z-index: 1;
+  ul {
+    a {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 main {
@@ -566,6 +588,100 @@ main {
     &:hover {
       color: #ffffff;
       background: #70c05b;
+    }
+  }
+}
+
+footer {
+  .footer {
+    padding: 24px 0;
+    background: #f9f4e2;
+    .footer-links {
+      .footer__links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 1180px) {
+          grid-template-columns: 1fr;
+        }
+        li {
+          a {
+            white-space: nowrap;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 150%;
+            color: #414141;
+          }
+        }
+      }
+    }
+    .footer-icons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 16px 16px;
+      @media (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 550px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .footer__call-center {
+      @media (max-width: 625px) {
+        flex-direction: column;
+      }
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: #414141;
+      }
+    }
+    .footer__bottom-logo {
+      @media (max-width: 550px) {
+        display: none !important;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 150%;
+        color: #414141;
+      }
+    }
+  }
+}
+
+.bottom__fixed-menu {
+  padding: 8px 0;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  @media (max-width: 450px) {
+    display: block;
+  }
+  background: #ffffff;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  .bottom__fixed-btns {
+    @media (max-width: 350px) {
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    gap: 35px 35px;
+    button {
+      border: none;
+      background-color: transparent;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 150%;
+      color: #414141;
     }
   }
 }

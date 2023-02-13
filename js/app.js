@@ -14,6 +14,22 @@ function openMenu() {
 
 btn.addEventListener("click", openMenu);
 
+const footer_btn = document.getElementById("footer__btn");
+
+let b = 0;
+
+function openFooter() {
+  if (b == 1) {
+    document.getElementById("footerMenu").style.display = "inline";
+    return (b = 0);
+  } else {
+    document.getElementById("footerMenu").style.display = "none";
+    return (b = 1);
+  }
+}
+
+footer_btn.addEventListener("click", openFooter);
+
 const home = document.querySelector(".home-container");
 
 const products = [
@@ -457,7 +473,7 @@ const articles_product = [
   {
     img: "images/articles-img2.png",
     date: "05.03.2021",
-    name: 'Весеннее настроение для каждой использования масок и перчаток',
+    name: "Весеннее настроение для каждой использования масок и перчаток",
     desc: "8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.",
   },
   {
