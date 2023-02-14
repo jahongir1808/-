@@ -10,12 +10,12 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <title>Северяночка</title>
+    <title>ResultSearch</title>
   </head>
   <body>
     <header>
       <nav id="navbar">
-        <div class="container navv">
+        <div class="container">
           <div
             class="nav-container gap-5 d-flex justify-content-between align-items-center"
           >
@@ -42,7 +42,11 @@
                 </div>
                 <div class="nav-input w-75">
                   <form>
-                    <input placeholder="Найти товар" type="text" />
+                    <input
+                      class="search"
+                      placeholder="Найти товар"
+                      type="text"
+                    />
                     <i class="uil uil-search"></i>
                   </form>
                 </div>
@@ -157,102 +161,21 @@
           </div>
         </div>
       </nav>
-      <div id="home" class="d-flex justify-content-center">
-        <img class="w-100" src="images/home-bg.png" alt="" />
-      </div>
     </header>
     <main>
       <div class="container">
-        <h2>Акции</h2>
-      </div>
-      <section class="container home-container"></section>
-      <div class="container nova__head">
-        <h2>Новинки</h2>
-      </div>
-      <section class="container novelties"></section>
-      <div class="container nova__head">
-        <h2>Покупали раньше</h2>
-      </div>
-      <section class="container buy"></section>
-      <div class="container nova__head">
-        <h2>Специальные предложения</h2>
-      </div>
-      <section class="container special"></section>
-      <div class="container nova__head">
-        <h2>Наши магазины</h2>
-      </div>
-      <section class="container shop">
-        <div class="shop__tabs">
-          <button class="shop_btn" id="shelyur" type="button" data-tab="#tab_1">
-            п.Щельяюр
-          </button>
-          <button class="shop_btn" id="vertep" type="button" data-tab="#tab_2">
-            д.Вертеп
-          </button>
-          <button
-            class="shop_btn"
-            id="krasnobor"
-            type="button"
-            data-tab="#tab_3"
-          >
-            с.Краснобор
-          </button>
-          <button class="shop_btn" id="diyur" type="button" data-tab="#tab_4">
-            д.Диюр
-          </button>
+        <h2 class="search-top">Результат поиска</h2>
+        <div class="search-text d-flex gap-1 align-items-center">
+          <h5 class="m-0">по запросу</h5>
+          <h6 class="m-0">Еда</h6>
         </div>
-        <div class="shop__items">
-          <iframe
-            class="map__item"
-            id="tab_1"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.249919276983!2d53.39601336727491!3d65.32264048499295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4472340bbf53f20d%3A0x6aaf90d406ef7886!2z0KnQtdC70YzRj9GO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1676225402129!5m2!1sru!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <iframe
-            class="map__item"
-            id="tab_2"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.249919276983!2d53.39601336727491!3d65.32264048499295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447249e2718cd461%3A0x25c0f625da4e30ed!2z0JLQtdGA0YLQtdC_LCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1676225430754!5m2!1sru!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <iframe
-            class="map__item"
-            id="tab_3"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6669.529990074628!2d53.186285151638714!3d65.29733194605693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235dd2ca590b3%3A0xc633232da326cfaf!2z0JrRgNCw0YHQvdC-0LHQvtGALCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1676225454636!5m2!1sru!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <iframe
-            class="map__item"
-            id="tab_4"
-            id="diy"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13341.641799037461!2d53.272392517190646!3d65.29223048406857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235aa69816fb7%3A0x7202220934f2d943!2z0JTQuNGO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGPLCAxNjk0NzE!5e0!3m2!1sru!2s!4v1676225475678!5m2!1sru!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="search-alert">
+          <div class="alert alert-info results" role="alert"></div>
         </div>
-      </section>
-      <div class="container nova__head">
-        <h2>Статьи</h2>
       </div>
-      <section class="container articles"></section>
+      <div class="container">
+        <div class="search-cards"></div>
+      </div>
     </main>
     <section class="bottom__fixed-menu">
       <div class="container">
@@ -408,8 +331,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/app.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/search_cards.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
