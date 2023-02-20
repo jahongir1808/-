@@ -1033,6 +1033,9 @@ main {
 }
 
 #popup-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer !important;
