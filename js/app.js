@@ -1,5 +1,3 @@
-
-
 const home = document.querySelector(".home-container");
 
 const products = [
@@ -495,3 +493,16 @@ for (el of articles_product) {
   let articles__card = articles_cards(el.img, el.date, el.name, el.desc);
   articles.append(articles__card);
 }
+
+const popup_close = document.getElementById("popup-close");
+const popup_menu = document.querySelector(".popup");
+
+popup_close.addEventListener("click", function () {
+  popup_menu.style.display = "none";
+});
+
+const popup_open = document.getElementById("popup-menu");
+
+popup_open.addEventListener("click", function () {
+  popup_menu.style.display = "block";
+});

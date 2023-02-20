@@ -69,9 +69,13 @@
                   </div>
                 </div>
                 <div class="nav-avatar d-flex align-items-center gap-3">
-                  <img src="images/nav-avatar.svg" alt="" />
+                  <button id="popup-menu">
+                    <img src="images/nav-avatar.svg" alt="" />
+                  </button>
                   <p class="m-0">Алексей</p>
-                  <button><i class="ps-3 uil uil-angle-down"></i></button>
+                  <button>
+                    <i class="ps-3 uil uil-angle-down"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -159,6 +163,27 @@
       </nav>
       <div id="home" class="d-flex justify-content-center">
         <img class="w-100" src="images/home-bg.png" alt="" />
+      </div>
+      <div class="popup">
+        <div class="container">
+          <div class="popup-container">
+            <div class="popup-menu">
+              <button id="popup-close">
+                <i class="uil uil-multiply"></i>
+              </button>
+              <h3>Вход</h3>
+              <form>
+                <p>Телефон</p>
+                <input type="text" />
+              </form>
+              <button type="submit">Вход</button>
+              <div class="popup-registr">
+                <button id="registr">Регистрация</button>
+                <a href="#">Забыли пароль?</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
