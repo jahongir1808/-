@@ -496,6 +496,7 @@ for (el of articles_product) {
 
 const popup_close = document.getElementById("popup-close");
 const popup_menu = document.querySelector(".popup");
+const popup_bottom = document.getElementById("popup_bottom-menu");
 
 popup_close.addEventListener("click", function () {
   popup_menu.style.display = "none";
@@ -504,5 +505,9 @@ popup_close.addEventListener("click", function () {
 const popup_open = document.getElementById("popup-menu");
 
 popup_open.addEventListener("click", function () {
+  popup_menu.style.display = "block";
+});
+
+popup_bottom.addEventListener("click", function () {
   popup_menu.style.display = "block";
 });
