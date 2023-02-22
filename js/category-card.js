@@ -4,7 +4,8 @@ const products = [
     category: "Fruit",
     description:
       "A round fruit with a red, green, or yellow skin and a white, crunchy interior.",
-    price: 89,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food0",
@@ -14,8 +15,10 @@ const products = [
     category: "Fruit",
     description:
       "A long, curved fruit with a yellow skin and sweet, creamy white flesh.",
-    price: 71,
-    disc_price: 140.5,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food1",
@@ -25,7 +28,8 @@ const products = [
     category: "Bakery",
     description:
       "A staple food made from flour, water, and yeast, baked into a loaf.",
-    price: 88,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food2",
@@ -35,7 +39,8 @@ const products = [
     category: "Vegetable",
     description:
       "A green vegetable with a tree-like appearance, known for its high nutrient content.",
-    price: 94,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food3",
@@ -45,7 +50,8 @@ const products = [
     category: "Vegetable",
     description:
       "A root vegetable with a crunchy texture and a sweet, earthy flavor.",
-    price: 82,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food4",
@@ -55,7 +61,8 @@ const products = [
     category: "Dairy",
     description:
       "A dairy product made from milk, with a variety of textures and flavors.",
-    price: 91,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 3.5,
     discount: 50,
     image: "https://picsum.photos/200/300/?food5",
@@ -65,7 +72,8 @@ const products = [
     category: "Meat",
     description:
       "A type of poultry, often used as a source of protein in meals.",
-    price: 68,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 3.5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food6",
@@ -75,7 +83,8 @@ const products = [
     category: "Dessert",
     description:
       "A sweet food made from cacao beans, used in a variety of desserts and confections.",
-    price: 61,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food7",
@@ -85,7 +94,8 @@ const products = [
     category: "Dessert",
     description:
       "A dark, bitter beverage made from roasted coffee beans, typically used as a pick-me-up.",
-    price: 98,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food8",
@@ -95,7 +105,8 @@ const products = [
     category: "Dairy",
     description:
       "A oval-shaped reproductive body produced by birds, often used as a source of protein in meals.",
-    price: 79,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food9",
@@ -105,7 +116,8 @@ const products = [
     category: "Meat",
     description:
       "A type of seafood, known for its omega-3 fatty acids and high protein content.",
-    price: 89,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 3.5,
     discount: 50,
     image: "https://picsum.photos/200/300/?food10",
@@ -115,7 +127,8 @@ const products = [
     category: "Fruit",
     description:
       "A small, sweet fruit that grows in clusters, often used in wine-making.",
-    price: 61,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4,
     discount: 20,
     image: "https://picsum.photos/200/300/?food11",
@@ -125,7 +138,8 @@ const products = [
     category: "Fast food",
     description:
       "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
-    price: 87,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food12",
@@ -135,7 +149,8 @@ const products = [
     category: "Fast food",
     description:
       "A type of sausage served in a long roll, often used as a quick and convenient food.",
-    price: 84,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 50,
     image: "https://picsum.photos/200/300/?food13",
@@ -145,7 +160,8 @@ const products = [
     category: "Dessert",
     description:
       "A frozen dessert made from cream, sugar, and flavorings, available in a variety of flavors.",
-    price: 68,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food14",
@@ -155,7 +171,8 @@ const products = [
     category: "Fruit",
     description:
       "A yellow citrus fruit with a tart, acidic flavor, often used in cooking and baking.",
-    price: 74,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 3.5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food15",
@@ -165,7 +182,8 @@ const products = [
     category: "Dairy",
     description:
       "Eggs are oval-shaped reproductive structures produced by female birds and some reptiles.",
-    price: 70,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 50,
     image: "https://picsum.photos/200/300/?food16",
@@ -175,7 +193,8 @@ const products = [
     category: "Dairy",
     description:
       "Honey is a sweet, sticky liquid made by bees from the nectar of flowers.",
-    price: 87,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4,
     discount: 0,
     image: "https://picsum.photos/200/300/?food17",
@@ -185,7 +204,8 @@ const products = [
     category: "Dessert",
     description:
       "Ice cream is a frozen dessert made from cream, sugar, and flavorings.",
-    price: 83,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food18",
@@ -195,7 +215,8 @@ const products = [
     category: "Fruit",
     description:
       "Jelly is a sweet spread made from fruit juice and sugar, often used as a topping for toast or pastries.",
-    price: 76,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food19",
@@ -205,7 +226,8 @@ const products = [
     category: "Dairy",
     description:
       "Ketchup is a tangy sauce made from tomatoes, vinegar, sugar, and spices.",
-    price: 77,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food20",
@@ -215,7 +237,8 @@ const products = [
     category: "Fruit",
     description:
       "Mangoes are juicy, sweet tropical fruits with a fleshy interior and a large, oblong seed in the center.",
-    price: 80,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food21",
@@ -225,7 +248,8 @@ const products = [
     category: "Meat",
     description:
       "Noodles are a type of pasta made from wheat flour and water, often used in Asian cuisine.",
-    price: 93,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 3.5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food22",
@@ -235,7 +259,8 @@ const products = [
     category: "Breakfast",
     description:
       "Oatmeal is a type of porridge made from oats that is often served for breakfast.",
-    price: 94,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food23",
@@ -245,7 +270,8 @@ const products = [
     category: "Breakfast",
     description:
       "Bacon is a popular breakfast food made from cured pork belly.",
-    price: 71,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 3.5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food24",
@@ -255,7 +281,8 @@ const products = [
     category: "Breakfast",
     description:
       "Pancakes are a popular breakfast food made from flour, eggs, and milk.",
-    price: 63,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4,
     discount: 0,
     image: "https://picsum.photos/200/300/?food25",
@@ -265,7 +292,8 @@ const products = [
     category: "Breakfast",
     description:
       "Waffles are a type of breakfast food made from batter cooked in a waffle iron.",
-    price: 97,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4.5,
     discount: 20,
     image: "https://picsum.photos/200/300/?food26",
@@ -275,7 +303,8 @@ const products = [
     category: "Lunch",
     description:
       "Fried Rice is a type of rice dish that is stir-fried in a pan with oil and other ingredients.",
-    price: 81,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4,
     discount: 20,
     image: "https://picsum.photos/200/300/?food27",
@@ -285,7 +314,8 @@ const products = [
     category: "Lunch",
     description:
       "Spaghetti is a type of pasta made from wheat flour and water, usually served with sauce.",
-    price: 96,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4,
     discount: 50,
     image: "https://picsum.photos/200/300/?food28",
@@ -295,7 +325,8 @@ const products = [
     category: "Lunch",
     description:
       "Pizza is a popular dish made from dough, sauce, cheese, and toppings.",
-    price: 95,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 4,
     discount: 0,
     image: "https://picsum.photos/200/300/?food29",
@@ -305,7 +336,8 @@ const products = [
     category: "Lunch",
     description:
       "A grilled cheese sandwich is a hot sandwich made from cheese and bread.",
-    price: 100,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 5,
     discount: 50,
     image: "https://picsum.photos/200/300/?food30",
@@ -315,7 +347,8 @@ const products = [
     category: "Dinner",
     description:
       "Steak is a popular dinner dish made from a cut of beef that is usually grilled or pan-fried.",
-    price: "139,99 ₽",
+    price: "77,99 ₽",
+
     disc_price: "140.5₽",
     rating: 4.5,
     discount: 20,
@@ -326,7 +359,7 @@ const products = [
     category: "Dinner",
     description:
       "Salmon is a type of fish that is often grilled or baked and served as a main course.",
-    price: "69,99 ₽",
+    price: "77,99 ₽",
     disc_price: "140.5₽",
     rating: 4.5,
     discount: 20,
@@ -348,7 +381,7 @@ const products = [
     category: "Dinner",
     description:
       "Lasagna is a type of pasta dish made with layers of pasta, sauce, cheese, and meat or vegetables.",
-    price: "192,99 ₽",
+    price: "77,99 ₽",
     disc_price: "140.5₽",
     rating: 5,
     discount: 0,
@@ -359,7 +392,8 @@ const products = [
     category: "Dessert",
     description:
       "Chocolate Chip Cookies are a type of cookie made from flour, sugar, butter, and chocolate chips.",
-    price: 98,
+    price: "77,99 ₽",
+    disc_price: "140.5₽",
     rating: 3.5,
     discount: 0,
     image: "https://picsum.photos/200/300/?food35",

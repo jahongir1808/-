@@ -10,8 +10,15 @@ let card_products = [
     image: "images/catalog-img2.png",
     background_color: "catalog__row_red",
     id: 2,
+    category: "Bakery",
   },
-  { name: "Фрукты и овощи", image: "images/catalog-img3.png", id: 3 },
+  {
+    name: "Фрукты и овощи",
+    image: "images/catalog-img3.png",
+    id: 3,
+    category: "Vegetable",
+    category: "Fruit",
+  },
   { name: "Замороженные продукты", image: "images/catalog-img4.png", id: 4 },
   {
     name: "Напитки",
@@ -22,6 +29,7 @@ let card_products = [
     name: "Кондитерские изделия",
     image: "images/catalog-img6.png",
     id: 6,
+    category: "Dessert",
   },
   {
     name: "Чай, кофе",
@@ -33,6 +41,7 @@ let card_products = [
     name: "Здоровое питание",
     image: "images/catalog-img9.png",
     id: 9,
+    category: "Lunch",
   },
   {
     name: "Зоотовары",
@@ -43,11 +52,13 @@ let card_products = [
     name: "Детское питание",
     image: "images/catalog-img11.png",
     id: 11,
+    category: "Breakfast",
   },
   {
     name: "Мясо, птица, колбаса",
     image: "images/catalog-img12.png",
     id: 12,
+    category: "Meat",
   },
   {
     name: "Непродовольственные товары",
