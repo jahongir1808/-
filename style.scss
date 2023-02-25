@@ -46,6 +46,10 @@ header {
   position: relative;
 }
 
+#margin_top {
+  margin-top: 24px;
+}
+
 // NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .nav-container {
@@ -144,6 +148,24 @@ header {
   .nav-right {
     .nav__menus-icons {
       .nav__menu-icon {
+        button {
+          border: none;
+          background-color: transparent;
+          i {
+            position: relative;
+            .nav-badge {
+              padding: 2px 2px 0px 4px;
+              position: absolute;
+              font-size: 12px;
+              background: #ff6633;
+              border-radius: 10px;
+              color: white;
+              font-weight: 500;
+              top: -7px;
+              right: -5px;
+            }
+          }
+        }
         i {
           font-size: 24px;
         }
@@ -918,7 +940,13 @@ main {
   &:hover {
     background: linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #ff6633 100%);
   }
+  button {
+    border: none;
+    background-color: transparent;
+    text-align: start;
+  }
   h5 {
+    text-align: left;
     font-style: normal;
     font-weight: 700;
     font-size: 1.125rem;
@@ -1141,6 +1169,261 @@ main {
           line-height: 150%;
           text-align: center;
           color: #606060;
+        }
+      }
+    }
+  }
+}
+
+#products {
+  margin-top: 64px;
+  h5 {
+    padding: 4px 8px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 150%;
+    text-align: center;
+    color: #606060;
+    background: #f3f2f1;
+    border-radius: 4px;
+  }
+}
+
+.milk-category {
+  gap: 40px;
+  @media (max-width: 768px) {
+    .milk-filter,
+    .milk-right {
+      width: 100% !important;
+    }
+  }
+  .milk-filter {
+    margin-top: 40px;
+    h4 {
+      padding: 10px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 150%;
+      color: #414141;
+      background: #f3f2f1;
+      border-radius: 4px;
+    }
+    .milk_filter-price {
+      .filter_inputs-head {
+        margin: 40px 0 13px;
+        p {
+          margin-bottom: 0;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 150%;
+          color: #000000;
+        }
+        button {
+          padding: 4px 8px;
+          background: #f3f2f1;
+          border-radius: 4px;
+          font-weight: 400;
+          font-size: 0.75rem;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+          line-height: 150%;
+          color: #606060;
+        }
+      }
+      .filter-inputs {
+        margin-bottom: 40px;
+        input[type="text"] {
+          padding: 8px 16px;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 28px;
+          color: #414141;
+          background: #ffffff;
+          border: 1px solid #bfbfbf;
+          border-radius: 4px;
+        }
+        span {
+          margin: 0 4.5px;
+          width: 15px;
+          height: 1px;
+          background-color: #414141;
+        }
+        input[type="range"] {
+          width: 100%;
+          margin-top: 13px;
+        }
+      }
+      .milk_filter-type {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 150%;
+          color: #414141;
+        }
+      }
+    }
+    .milk_filter-in-stock {
+      margin: 40px 0;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      button {
+        position: relative;
+        width: 46px;
+        height: 24px;
+        border: none;
+        background: #70c05b;
+        border-radius: 49px;
+        span {
+          position: absolute;
+          right: 2px;
+          top: 2px;
+          width: 20px;
+          height: 20px;
+          background: #ffffff;
+          border: 0.5px solid rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15),
+            0px 1px 1px rgba(0, 0, 0, 0.08);
+          border-radius: 100px;
+        }
+      }
+      p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: #414141;
+      }
+    }
+    #apply {
+      padding: 8px;
+      width: 100%;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 150%;
+      color: #ffffff;
+      background: #ff6633;
+      border-radius: 4px;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .milk-right {
+    .milk_products-btn {
+      margin: 40px 0;
+      width: 100%;
+      gap: 24px;
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+      button {
+        padding: 8px;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 150%;
+        color: #ffffff;
+        background: #70c05b;
+        border-radius: 4px;
+        i {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.milk-products {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .milk-product {
+    background: #ffffff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    .milk-content {
+      padding: 8px;
+      .milk-price {
+        display: flex;
+        justify-content: space-between;
+        h5 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.125rem;
+          line-height: 150%;
+          color: #414141;
+        }
+        h6 {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 150%;
+          color: #606060;
+        }
+      }
+      .milk-payment {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-weight: 400;
+          font-size: 0.75rem;
+          line-height: 150%;
+          color: #bfbfbf;
+        }
+      }
+    }
+    .milk-description {
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: #414141;
+      }
+    }
+    .milk-button {
+      button {
+        margin-top: 16px;
+        padding: 8px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: #70c05b;
+        border: 1px solid #70c05b;
+        border-radius: 4px;
+        transition: 0.3s;
+        &:hover {
+          color: #ffffff;
+          background: #ff6633;
+          border-radius: 4px;
+        }
+        &:focus {
+          outline: none;
         }
       }
     }
