@@ -934,9 +934,9 @@ main {
 }
 
 .search-cards {
-  img {
-    width: 100%;
-  }
+  // img {
+  //   width: 100%;
+  // }
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 40px 40px;
@@ -1039,6 +1039,9 @@ main {
   border: none;
   background-color: transparent;
   cursor: pointer !important;
+}
+
+#popup_bottom-menu {
 }
 
 .popup {

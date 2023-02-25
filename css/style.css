@@ -913,9 +913,6 @@ main .container h2 {
   grid-template-columns: 1fr;
   grid-gap: 40px 40px;
 }
-.search-cards img {
-  width: 100%;
-}
 @media (min-width: 500px) {
   .search-cards {
     grid-template-columns: repeat(2, 1fr);

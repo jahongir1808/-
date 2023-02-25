@@ -1,33 +1,27 @@
-function getSearchCard(
-  img,
-  price,
-  pricetwo,
-  paymen,
-  paymenttwo,
-  desc
-//   rating,
-//   raitings,
-//   raiting
-) {
-//   let search_append = document.querySelector(".search-rating");
-
-//   for (let i = 0; i < rating; i++) {
-//     const star = document.createElement("img");
-//     star.src = "images/star-full.svg";
-//     search_append.append(star);
-//   }
-
-//   for (let i = 0; i < raitings; i++) {
-//     const star_full = document.createElement("img");
-//     star_full.src = "images/star.svg";
-//     search_append.append(star_full);
-//   }
-
-//   for (let i = 0; i < raiting; i++) {
-//     const star_half = document.createElement("img");
-//     star_half.src = "images/star-half.svg";
-//     search_append.append(star_half);
-//   }
+function getSearchCard(img, price, pricetwo, paymen, paymenttwo, desc, rating) {
+  function getRating(rating) {
+    let res = "";
+    let star_count = 0;
+    let full_star = parseInt(rating);
+    let rest_star = rating - full_star;
+    star_count = full_star;
+    res = Array(full_star)
+      .fill("<img width='25px' src='images/star-full.svg'>")
+      .join("");
+    if (0.25 <= rest_star && rest_star <= 0.5) {
+      star_count++;
+      res += "<img width='25px' src='images/star-half.svg'>";
+    }
+    if (0.5 < rest_star) {
+      star_count++;
+      res += "<img width='25px' src='images/star-full.svg'>";
+    }
+    free_star = 5 - star_count;
+    res += Array(free_star)
+      .fill("<img width='25px' src='images/star.svg'>")
+      .join("");
+    return res;
+  }
 
   return `          
   <div class="search-card">
@@ -47,6 +41,7 @@ function getSearchCard(
         <p>${desc}</p>
       </div>
       <div class="search-rating">
+      ${getRating(rating)}
       </div>
       <div class="search-button">
       <button class="search-btn">В Корзину</button>
@@ -63,9 +58,7 @@ const search_card_products = [
     payment: "С картой",
     payment_default: "Обычная",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
-    rating: 2,
-    raiting: 3,
-    raitingss: 0,
+    rating: 3.5,
   },
   {
     img: "images/result-img2.png",
