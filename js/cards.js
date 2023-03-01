@@ -74,11 +74,12 @@ function getCard(img, content, id) {
         <img src="${img}" alt="" />
       </div>
     <button onclick="getCategoryCard(${id})">
-      <a href="milk.html">
+        
       <div class="catalog-content">
-      <h5>${content}</h5>
-    </div></button>
-    </a>
+      <a href="milk.html">  <h5>${content}</h5>  </a>
+      </div>
+    
+    </button>
   </div>
   `;
 }

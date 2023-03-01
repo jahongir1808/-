@@ -1,448 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <title>Северяночка</title>
-  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <div class="container navv">
-          <div
-            class="nav-container gap-5 d-flex justify-content-between align-items-center"
-          >
-            <div class="nav-logo w-auto">
-              <a class="navbar-brand" href="index.html"
-                ><img src="images/nav-logo.svg" alt=""
-              /></a>
-              <a class="navbar__res-logo" href="index.html"
-                ><img src="images/res-logo.svg" alt=""
-              /></a>
-            </div>
-            <div class="nav__scroll d-flex justify-content-between w-100">
-              <div
-                class="nav-middle w-100 d-flex align-items-center justify-content-center gap-4"
-              >
-                <div class="nav-catalog">
-                  <button
-                    id="navbar_btn"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <i class="uil uil-bars"></i>
-                    <p class="m-0">Каталог</p>
-                  </button>
-                </div>
-                <div class="nav-input w-75">
-                  <form>
-                    <input placeholder="Найти товар" type="text" />
-                    <i class="uil uil-search"></i>
-                  </form>
-                </div>
-              </div>
-              <div class="nav-right d-flex align-items-center gap-5">
-                <div class="nav__menus-icons d-flex gap-4">
-                  <div
-                    class="nav__menu-icon d-flex flex-column align-items-center"
-                  >
-                    <i class="uil uil-heart"></i>
-                    <p class="m-0">Избранное</p>
-                  </div>
-                  <div
-                    class="nav__menu-icon d-flex flex-column align-items-center"
-                  >
-                    <i class="uil uil-box"></i>
-                    <p class="m-0">Заказы</p>
-                  </div>
-                  <div
-                    class="nav__menu-icon d-flex flex-column align-items-center"
-                  >
-                    <button>
-                      <i class="uil uil-shopping-cart"
-                        ><span class="nav-badge">0</span></i
-                      >
-                    </button>
-                    <p class="m-0">Корзина</p>
-                  </div>
-                </div>
-                <div class="nav-avatar d-flex align-items-center gap-3">
-                  <button id="popup-menu">
-                    <img src="images/nav-avatar.svg" alt="" />
-                    <p class="m-0">Алексей</p>
-                  </button>
-                  <button>
-                    <i class="ps-3 uil uil-angle-down"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbarr">
-          <div class="navbar">
-            <div id="navbarMenu" class="navbar-menus">
-              <div class="container">
-                <ul class="navbar-nav m-0">
-                  <div class="nav__item-menus">
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html"
-                        >Молоко, сыр, яйцо</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Хлеб</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Фрукты и овощи</a
-                      >
-                    </li>
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html"
-                        >Замороженные продукты</a
-                      >
-                    </li>
-                  </div>
-                  <div class="nav__item-menus">
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html">Напитки</a>
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Кондитерские изделия</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Чай, кофе</a
-                      >
-                    </li>
-                  </div>
-                  <div class="nav__item-menus">
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html">Бакалея</a>
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Здоровое питание</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Зоотовары</a
-                      >
-                    </li>
-                  </div>
-                  <div class="nav__item-menus">
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html"
-                        >Непродовольственные товары</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Детское питание</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Мясо, птица, колбаса</a
-                      >
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div id="home" class="d-flex justify-content-center">
-        <img class="w-100" src="images/home-bg.png" alt="" />
-      </div>
-      <div class="popup">
-        <div class="container">
-          <div class="popup-container">
-            <div class="popup-menu">
-              <button id="popup-close">
-                <i class="uil uil-multiply"></i>
-              </button>
-              <h3>Вход</h3>
-              <form>
-                <p>Телефон</p>
-                <input type="text" />
-              </form>
-              <button type="submit">Вход</button>
-              <div class="popup-registr">
-                <button id="registr">Регистрация</button>
-                <a href="#">Забыли пароль?</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <h2>Акции</h2>
-      </div>
-      <section class="container home-container"></section>
-      <div class="container nova__head">
-        <h2>Новинки</h2>
-      </div>
-      <section class="container novelties"></section>
-      <div class="container nova__head">
-        <h2>Покупали раньше</h2>
-      </div>
-      <section class="container buy"></section>
-      <div class="container nova__head">
-        <h2>Специальные предложения</h2>
-      </div>
-      <section class="container special"></section>
-      <div class="container nova__head">
-        <h2>Наши магазины</h2>
-      </div>
-      <section class="container shop">
-        <div class="shop__tabs">
-          <button class="shop_btn" id="shelyur" type="button" data-tab="#tab_1">
-            п.Щельяюр
-          </button>
-          <button class="shop_btn" id="vertep" type="button" data-tab="#tab_2">
-            д.Вертеп
-          </button>
-          <button
-            class="shop_btn"
-            id="krasnobor"
-            type="button"
-            data-tab="#tab_3"
-          >
-            с.Краснобор
-          </button>
-          <button class="shop_btn" id="diyur" type="button" data-tab="#tab_4">
-            д.Диюр
-          </button>
-        </div>
-        <div class="shop__items">
-          <iframe
-            class="map__item"
-            id="tab_1"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.249919276983!2d53.39601336727491!3d65.32264048499295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4472340bbf53f20d%3A0x6aaf90d406ef7886!2z0KnQtdC70YzRj9GO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1676225402129!5m2!1sru!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <iframe
-            class="map__item"
-            id="tab_2"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.249919276983!2d53.39601336727491!3d65.32264048499295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447249e2718cd461%3A0x25c0f625da4e30ed!2z0JLQtdGA0YLQtdC_LCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1676225430754!5m2!1sru!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <iframe
-            class="map__item"
-            id="tab_3"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6669.529990074628!2d53.186285151638714!3d65.29733194605693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235dd2ca590b3%3A0xc633232da326cfaf!2z0JrRgNCw0YHQvdC-0LHQvtGALCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1676225454636!5m2!1sru!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <iframe
-            class="map__item"
-            id="tab_4"
-            id="diy"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13341.641799037461!2d53.272392517190646!3d65.29223048406857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235aa69816fb7%3A0x7202220934f2d943!2z0JTQuNGO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGPLCAxNjk0NzE!5e0!3m2!1sru!2s!4v1676225475678!5m2!1sru!2s"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-      <div class="container nova__head">
-        <h2>Статьи</h2>
-      </div>
-      <section class="container articles"></section>
-    </main>
-    <section class="bottom__fixed-menu">
-      <div class="container">
-        <div class="bottom__fixed-btns d-flex align-items-center">
-          <button
-            id="footer__btn"
-            class="d-flex flex-column align-items-center"
-          >
-            <img src="images/bottom-menu.svg" alt="" />
-            Каталог
-          </button>
-          <button class="d-flex flex-column align-items-center">
-            <img src="images/bottom-heart.svg" alt="" />
-            Избранное
-          </button>
-          <button class="d-flex flex-column align-items-center">
-            <img src="images/bottom-box.svg" alt="" />
-            Заказы
-          </button>
-          <button class="d-flex flex-column align-items-center">
-            <img src="images/bottom-cart.svg" alt="" />
-            Корзина
-          </button>
-          <button id="popup_bottom-menu">
-            <img src="images/nav-avatar.svg" alt="" />
-          </button>
-        </div>
-      </div>
-      <div class="container">
-        <div class="footer__fixed">
-          <div class="footerr">
-            <div id="footerMenu" class="footer__fixed-menus">
-              <ul class="footer-nav m-0">
-                <div class="footer__item-menus">
-                  <li class="nav-item custom_item-btn">
-                    <a class="nav-link" href="catalog.html"
-                      >Молоко, сыр, яйцо</a
-                    >
-                  </li>
-                  <li class="nav-item custom-item">
-                    <a class="nav-link custom-navlink" href="catalog.html"
-                      >Хлеб</a
-                    >
-                  </li>
-                  <li class="nav-item custom-item">
-                    <a class="nav-link custom-navlink" href="catalog.html"
-                      >Фрукты и овощи</a
-                    >
-                  </li>
-                  <li class="nav-item custom_item-btn">
-                    <a class="nav-link" href="catalog.html"
-                      >Замороженные продукты</a
-                    >
-                  </li>
-                </div>
-                <div class="nav__item-menus">
-                  <li class="nav-item custom_item-btn">
-                    <a class="nav-link" href="catalog.html">Напитки</a>
-                  </li>
-                  <li class="nav-item custom-item">
-                    <a class="nav-link custom-navlink" href="catalog.html"
-                      >Кондитерские изделия</a
-                    >
-                  </li>
-                  <li class="nav-item custom-item">
-                    <a class="nav-link custom-navlink" href="catalog.html"
-                      >Чай, кофе</a
-                    >
-                  </li>
-                </div>
-                <div class="nav__item-menus">
-                  <li class="nav-item custom_item-btn">
-                    <a class="nav-link" href="catalog.html">Бакалея</a>
-                  </li>
-                  <li class="nav-item custom-item">
-                    <a class="nav-link custom-navlink" href="catalog.html"
-                      >Здоровое питание</a
-                    >
-                  </li>
-                  <li class="nav-item custom-item">
-                    <a class="nav-link custom-navlink" href="catalog.html"
-                      >Зоотовары</a
-                    >
-                  </li>
-                </div>
-                <div class="nav__item-menus">
-                  <li class="nav-item custom_item-btn">
-                    <a class="nav-link" href="catalog.html"
-                      >Непродовольственные товары</a
-                    >
-                  </li>
-                  <li class="nav-item custom-item">
-                    <a class="nav-link custom-navlink" href="catalog.html"
-                      >Детское питание</a
-                    >
-                  </li>
-                  <li class="nav-item custom-item">
-                    <a class="nav-link custom-navlink" href="catalog.html"
-                      >Мясо, птица, колбаса</a
-                    >
-                  </li>
-                </div>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer">
-        <div
-          class="container d-flex flex-column flex-sm-row gap-4 justify-content-between align-items-center"
-        >
-          <div
-            class="footer-logo d-flex align-items-center align-items-sm-start gap-4 gap-sm-4 align-items-lg-center flex-column flex-md-row"
-          >
-            <img src="images/footer-logo.svg" alt="" />
-            <div class="footer-links">
-              <ul class="footer__links ps-0 mb-0">
-                <ul class="ps-0 d-flex gap-5">
-                  <li><a href="#">О компании</a></li>
-                  <li><a href="#">Контакты</a></li>
-                  <li><a href="#">Вакансии</a></li>
-                </ul>
-                <ul class="ps-0 d-flex gap-5">
-                  <li><a href="#">Статьи</a></li>
-                  <li>
-                    <a href="#">Политика обработки персональных данных</a>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="footer__call-center d-flex gap-1 gap-sm-5 align-items-center"
-          >
-            <div class="footer-icons ms-3">
-              <img src="images/instagram.svg" alt="" />
-              <img src="images/vkontakte.svg" alt="" />
-              <img src="images/facebook.svg" alt="" />
-              <img src="images/ok.svg" alt="" />
-            </div>
-            <div class="footer__call">
-              <a
-                class="mt-0 mt-xl-4 d-flex align-items-center gap-2"
-                href="tel: +8 800 777 33 33"
-                ><img src="images/phone.svg" alt="" />8 800 777 33 33</a
-              >
-              <div
-                class="container footer__bottom-logo d-flex align-items-center justify-content-end mt-2 ps-0 gap-2"
-              >
-                <p class="m-0">Дизайн</p>
-                <img src="images/footer-log1.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="js/app.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+		/>
+		<title>Северяночка</title>
+	</head>
+	<body>
+		<header>
+			<nav id="navbar">
+				<div class="container navv">
+					<div
+						class="nav-container gap-5 d-flex justify-content-between align-items-center"
+					>
+						<div class="nav-logo w-auto">
+							<a class="navbar-brand" href="index.html"
+								><img src="images/nav-logo.svg" alt=""
+							/></a>
+							<a class="navbar__res-logo" href="index.html"
+								><img src="images/res-logo.svg" alt=""
+							/></a>
+						</div>
+						<div class="nav__scroll d-flex justify-content-between w-100">
+							<div
+								class="nav-middle w-100 d-flex align-items-center justify-content-center gap-4"
+							>
+								<div class="nav-catalog d-flex align-items-center gap-2">
+									<button id="navbar_btn" class="">
+										<i class="uil uil-bars"></i>
+									</button>
+									<a href="catalog.html">Каталог</a>
+								</div>
+								<div class="nav-input w-75">
+									<form>
+										<input placeholder="Найти товар" type="text" />
+										<i class="uil uil-search"></i>
+									</form>
+								</div>
+							</div>
+							<div class="nav-right d-flex align-items-center gap-5">
+								<div class="nav__menus-icons d-flex gap-4">
+									<div
+										class="nav__menu-icon d-flex flex-column align-items-center"
+									>
+										<i class="uil uil-heart"></i>
+										<p class="m-0">Избранное</p>
+									</div>
+									<div class="nav__menu-icon">
+										<a
+											href="result-search.html"
+											class="d-flex flex-column align-items-center"
+										>
+											<i class="uil uil-box"> </i>
+											<p class="m-0">Продукты</p>
+										</a>
+									</div>
+									<div
+										class="nav__menu-icon d-flex flex-column align-items-center"
+									>
+										<a href="basket.html" type="button">
+											<i class="uil uil-shopping-cart">
+												<span class="cart nav-badge"></span>
+											</i>
+										</a>
+										<p class="m-0">Корзина</p>
+									</div>
+								</div>
+								<div class="nav-avatar d-flex align-items-center gap-3">
+									<button id="popup-menu">
+										<img src="images/nav-avatar.svg" alt="" />
+										<p class="m-0">Алексей</p>
+									</button>
+									<button>
+										<i class="ps-3 uil uil-angle-down"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbarr">
+					<div class="navbar">
+						<div id="navbarMenu" class="navbar-menus">
+							<div class="container">
+								<ul class="navbar-nav m-0">
+									<div class="nav__item-menus">
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html"
+												>Молоко, сыр, яйцо</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Хлеб</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Фрукты и овощи</a
+											>
+										</li>
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html"
+												>Замороженные продукты</a
+											>
+										</li>
+									</div>
+									<div class="nav__item-menus">
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html">Напитки</a>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Кондитерские изделия</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Чай, кофе</a
+											>
+										</li>
+									</div>
+									<div class="nav__item-menus">
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html">Бакалея</a>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Здоровое питание</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Зоотовары</a
+											>
+										</li>
+									</div>
+									<div class="nav__item-menus">
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html"
+												>Непродовольственные товары</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Детское питание</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Мясо, птица, колбаса</a
+											>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div id="home" class="d-flex justify-content-center">
+				<img class="w-100" src="images/home-bg.png" alt="" />
+			</div>
+			<div class="popup">
+				<div class="container">
+					<div class="popup-container">
+						<div class="popup-menu">
+							<button id="popup-close">
+								<i class="uil uil-multiply"></i>
+							</button>
+							<h3>Вход</h3>
+							<form>
+								<p>Телефон</p>
+								<input type="text" />
+							</form>
+							<button type="submit">Вход</button>
+							<div class="popup-registr">
+								<button id="registr">Регистрация</button>
+								<a href="#">Забыли пароль?</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container d-flex align-items-center justify-content-between">
+				<h2>Акции</h2>
+				<a class="products-link" href="result-search.html"
+					>Все продукты <img src="images/right-arrow.svg" alt=""
+				/></a>
+			</div>
+			<section class="container home-container"></section>
+			<div
+				class="container nova__head d-flex align-items-center justify-content-between"
+			>
+				<h2>Новинки</h2>
+				<a class="products-link" href="result-search.html"
+					>Все продукты <img src="images/right-arrow.svg" alt=""
+				/></a>
+			</div>
+			<section class="container novelties"></section>
+			<div
+				class="container nova__head d-flex align-items-center justify-content-between"
+			>
+				<h2>Покупали раньше</h2>
+				<a class="products-link" href="result-search.html"
+					>Все продукты <img src="images/right-arrow.svg" alt=""
+				/></a>
+			</div>
+			<section class="container buy"></section>
+			<div class="container nova__head">
+				<h2>Специальные предложения</h2>
+			</div>
+			<section class="container special"></section>
+			<div class="container nova__head">
+				<h2>Наши магазины</h2>
+			</div>
+			<section class="container shop">
+				<div class="shop__tabs">
+					<button class="shop_btn" id="shelyur" type="button" data-tab="#tab_1">
+						п.Щельяюр
+					</button>
+					<button class="shop_btn" id="vertep" type="button" data-tab="#tab_2">
+						д.Вертеп
+					</button>
+					<button
+						class="shop_btn"
+						id="krasnobor"
+						type="button"
+						data-tab="#tab_3"
+					>
+						с.Краснобор
+					</button>
+					<button class="shop_btn" id="diyur" type="button" data-tab="#tab_4">
+						д.Диюр
+					</button>
+				</div>
+				<div class="shop__items">
+					<iframe
+						class="map__item"
+						id="tab_1"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.249919276983!2d53.39601336727491!3d65.32264048499295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4472340bbf53f20d%3A0x6aaf90d406ef7886!2z0KnQtdC70YzRj9GO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1676225402129!5m2!1sru!2s"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+					<iframe
+						class="map__item"
+						id="tab_2"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.249919276983!2d53.39601336727491!3d65.32264048499295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447249e2718cd461%3A0x25c0f625da4e30ed!2z0JLQtdGA0YLQtdC_LCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1676225430754!5m2!1sru!2s"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+					<iframe
+						class="map__item"
+						id="tab_3"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6669.529990074628!2d53.186285151638714!3d65.29733194605693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235dd2ca590b3%3A0xc633232da326cfaf!2z0JrRgNCw0YHQvdC-0LHQvtGALCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1676225454636!5m2!1sru!2s"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+					<iframe
+						class="map__item"
+						id="tab_4"
+						id="diy"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13341.641799037461!2d53.272392517190646!3d65.29223048406857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235aa69816fb7%3A0x7202220934f2d943!2z0JTQuNGO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGPLCAxNjk0NzE!5e0!3m2!1sru!2s!4v1676225475678!5m2!1sru!2s"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</section>
+			<div class="container nova__head">
+				<h2>Статьи</h2>
+			</div>
+			<section class="container articles"></section>
+		</main>
+		<section class="bottom__fixed-menu">
+			<div class="container">
+				<div class="bottom__fixed-btns d-flex align-items-center">
+					<button
+						id="footer__btn"
+						class="d-flex flex-column align-items-center"
+					>
+						<img src="images/bottom-menu.svg" alt="" />
+						Каталог
+					</button>
+					<button class="d-flex flex-column align-items-center">
+						<img src="images/bottom-heart.svg" alt="" />
+						Избранное
+					</button>
+					<button class="d-flex flex-column align-items-center">
+						<img src="images/bottom-box.svg" alt="" />
+						Заказы
+					</button>
+					<button class="d-flex flex-column align-items-center">
+						<img src="images/bottom-cart.svg" alt="" />
+						Корзина
+					</button>
+					<button id="popup_bottom-menu">
+						<img src="images/nav-avatar.svg" alt="" />
+					</button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer__fixed">
+					<div class="footerr">
+						<div id="footerMenu" class="footer__fixed-menus">
+							<ul class="footer-nav m-0">
+								<div class="footer__item-menus">
+									<li class="nav-item custom_item-btn">
+										<a class="nav-link" href="catalog.html"
+											>Молоко, сыр, яйцо</a
+										>
+									</li>
+									<li class="nav-item custom-item">
+										<a class="nav-link custom-navlink" href="catalog.html"
+											>Хлеб</a
+										>
+									</li>
+									<li class="nav-item custom-item">
+										<a class="nav-link custom-navlink" href="catalog.html"
+											>Фрукты и овощи</a
+										>
+									</li>
+									<li class="nav-item custom_item-btn">
+										<a class="nav-link" href="catalog.html"
+											>Замороженные продукты</a
+										>
+									</li>
+								</div>
+								<div class="nav__item-menus">
+									<li class="nav-item custom_item-btn">
+										<a class="nav-link" href="catalog.html">Напитки</a>
+									</li>
+									<li class="nav-item custom-item">
+										<a class="nav-link custom-navlink" href="catalog.html"
+											>Кондитерские изделия</a
+										>
+									</li>
+									<li class="nav-item custom-item">
+										<a class="nav-link custom-navlink" href="catalog.html"
+											>Чай, кофе</a
+										>
+									</li>
+								</div>
+								<div class="nav__item-menus">
+									<li class="nav-item custom_item-btn">
+										<a class="nav-link" href="catalog.html">Бакалея</a>
+									</li>
+									<li class="nav-item custom-item">
+										<a class="nav-link custom-navlink" href="catalog.html"
+											>Здоровое питание</a
+										>
+									</li>
+									<li class="nav-item custom-item">
+										<a class="nav-link custom-navlink" href="catalog.html"
+											>Зоотовары</a
+										>
+									</li>
+								</div>
+								<div class="nav__item-menus">
+									<li class="nav-item custom_item-btn">
+										<a class="nav-link" href="catalog.html"
+											>Непродовольственные товары</a
+										>
+									</li>
+									<li class="nav-item custom-item">
+										<a class="nav-link custom-navlink" href="catalog.html"
+											>Детское питание</a
+										>
+									</li>
+									<li class="nav-item custom-item">
+										<a class="nav-link custom-navlink" href="catalog.html"
+											>Мясо, птица, колбаса</a
+										>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<div
+					class="container d-flex flex-column flex-sm-row gap-4 justify-content-between align-items-center"
+				>
+					<div
+						class="footer-logo d-flex align-items-center align-items-sm-start gap-4 gap-sm-4 align-items-lg-center flex-column flex-md-row"
+					>
+						<img src="images/footer-logo.svg" alt="" />
+						<div class="footer-links">
+							<ul class="footer__links ps-0 mb-0">
+								<ul class="ps-0 d-flex gap-5">
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Вакансии</a></li>
+								</ul>
+								<ul class="ps-0 d-flex gap-5">
+									<li><a href="#">Статьи</a></li>
+									<li>
+										<a href="#">Политика обработки персональных данных</a>
+									</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="footer__call-center d-flex gap-1 gap-sm-5 align-items-center"
+					>
+						<div class="footer-icons ms-3">
+							<img src="images/instagram.svg" alt="" />
+							<img src="images/vkontakte.svg" alt="" />
+							<img src="images/facebook.svg" alt="" />
+							<img src="images/ok.svg" alt="" />
+						</div>
+						<div class="footer__call">
+							<a
+								class="mt-0 mt-xl-4 d-flex align-items-center gap-2"
+								href="tel: +8 800 777 33 33"
+								><img src="images/phone.svg" alt="" />8 800 777 33 33</a
+							>
+							<div
+								class="container footer__bottom-logo d-flex align-items-center justify-content-end mt-2 ps-0 gap-2"
+							>
+								<p class="m-0">Дизайн</p>
+								<img src="images/footer-log1.svg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/app.js"></script>
+		<script src="js/nav.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

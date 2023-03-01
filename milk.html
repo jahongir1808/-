@@ -1,242 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalaog Product</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <div class="container navv">
-          <div
-            class="nav-container gap-5 d-flex justify-content-between align-items-center"
-          >
-            <div class="nav-logo w-auto">
-              <a class="navbar-brand" href="index.html"
-                ><img src="images/nav-logo.svg" alt=""
-              /></a>
-              <a class="navbar__res-logo" href="index.html"
-                ><img src="images/res-logo.svg" alt=""
-              /></a>
-            </div>
-            <div class="nav__scroll d-flex justify-content-between w-100">
-              <div
-                class="nav-middle w-100 d-flex align-items-center justify-content-center gap-4"
-              >
-                <div class="nav-catalog">
-                  <button
-                    id="navbar_btn"
-                    class="d-flex align-items-center gap-2"
-                  >
-                    <i class="uil uil-bars"></i>
-                    <p class="m-0">Каталог</p>
-                  </button>
-                </div>
-                <div class="nav-input w-75">
-                  <form>
-                    <input placeholder="Найти товар" type="text" />
-                    <i class="uil uil-search"></i>
-                  </form>
-                </div>
-              </div>
-              <div class="nav-right d-flex align-items-center gap-5">
-                <div class="nav__menus-icons d-flex gap-4">
-                  <div
-                    class="nav__menu-icon d-flex flex-column align-items-center"
-                  >
-                    <i class="uil uil-heart"></i>
-                    <p class="m-0">Избранное</p>
-                  </div>
-                  <div
-                    class="nav__menu-icon d-flex flex-column align-items-center"
-                  >
-                    <i class="uil uil-box"></i>
-                    <p class="m-0">Заказы</p>
-                  </div>
-                  <div
-                    class="nav__menu-icon d-flex flex-column align-items-center"
-                  >
-                    <button>
-                      <i class="uil uil-shopping-cart"
-                        ><span class="nav-badge">0</span></i
-                      >
-                    </button>
-                    <p class="m-0">Корзина</p>
-                  </div>
-                </div>
-                <div class="nav-avatar d-flex align-items-center gap-3">
-                  <button id="popup-menu">
-                    <img src="images/nav-avatar.svg" alt="" />
-                    <p class="m-0">Алексей</p>
-                  </button>
-                  <button>
-                    <i class="ps-3 uil uil-angle-down"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbarr">
-          <div class="navbar">
-            <div id="navbarMenu" class="navbar-menus">
-              <div class="container">
-                <ul class="navbar-nav m-0">
-                  <div class="nav__item-menus">
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html"
-                        >Молоко, сыр, яйцо</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Хлеб</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Фрукты и овощи</a
-                      >
-                    </li>
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html"
-                        >Замороженные продукты</a
-                      >
-                    </li>
-                  </div>
-                  <div class="nav__item-menus">
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html">Напитки</a>
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Кондитерские изделия</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Чай, кофе</a
-                      >
-                    </li>
-                  </div>
-                  <div class="nav__item-menus">
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html">Бакалея</a>
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Здоровое питание</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Зоотовары</a
-                      >
-                    </li>
-                  </div>
-                  <div class="nav__item-menus">
-                    <li class="nav-item custom_item-btn">
-                      <a class="nav-link" href="catalog.html"
-                        >Непродовольственные товары</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Детское питание</a
-                      >
-                    </li>
-                    <li class="nav-item custom-item">
-                      <a class="nav-link custom-navlink" href="catalog.html"
-                        >Мясо, птица, колбаса</a
-                      >
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main id="margin_top">
-      <section>
-        <div class="container">
-          <div class="page-links d-flex gap-3 align-items-center">
-            <a href="index.html"><span class="m-0">Главная</span></a>
-            <span><img src="images/right-arrow.svg" alt="" /></span>
-            <a href="catalog.html"><p class="m-0">Каталог</p></a>
-          </div>
-        </div>
-        <div class="container catalog-head">
-          <h2>Молоко, сыр, яйцо</h2>
-        </div>
-        <div class="container">
-          <div id="products" class="d-flex gap-4">
-            <h5>Товары нашего производства</h5>
-            <h5>Полезное производства</h5>
-            <h5>Без ГМО</h5>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="milk-category d-flex flex-column flex-md-row">
-            <div class="milk-filter w-25">
-              <h4>Фильтр</h4>
-              <div class="milk_filter-price">
-                <div
-                  class="filter_inputs-head d-flex justify-content-between align-items-center"
-                >
-                  <p>Цена</p>
-                  <button id="filter-clear">Очистить</button>
-                </div>
-                <div class="filter-inputs">
-                  <form class="d-flex align-items-center">
-                    <input class="w-50" value="1" type="text" />
-                    <span></span>
-                    <input class="w-50" value="100" type="text" />
-                  </form>
-                  <form>
-                    <input type="range" />
-                  </form>
-                </div>
-                <div class="milk_filter-type">
-                  <p>Молоко</p>
-                  <p>Сливки</p>
-                  <p>Яйцо</p>
-                </div>
-              </div>
-              <div class="milk_filter-in-stock">
-                <button id="check">
-                  <span></span>
-                </button>
-                <p>В наличии</p>
-              </div>
-              <button id="apply">Применить</button>
-            </div>
-            <div class="milk-right w-75">
-              <div class="milk_products-btn d-flex">
-                <button class="d-flex align-items-center justify-content-between gap-2">Фильтр 4 <i class="uil uil-times"></i></button>
-                <button class="d-flex align-items-center justify-content-between gap-2">Цена от 99 до 2599 <i class="uil uil-times"></i></button>
-                <button class="d-flex align-items-center justify-content-between gap-2">Очистить фильтры <i class="uil uil-times"></i></button>
-              </div>
-              <div class="milk-products"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="js/nav.js"></script>
-    <script src="js/cards.js"></script>
-    <script src="js/category-card.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Catalaog Product</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav id="navbar">
+				<div class="container navv">
+					<div
+						class="nav-container gap-5 d-flex justify-content-between align-items-center"
+					>
+						<div class="nav-logo w-auto">
+							<a class="navbar-brand" href="index.html"
+								><img src="images/nav-logo.svg" alt=""
+							/></a>
+							<a class="navbar__res-logo" href="index.html"
+								><img src="images/res-logo.svg" alt=""
+							/></a>
+						</div>
+						<div class="nav__scroll d-flex justify-content-between w-100">
+							<div
+								class="nav-middle w-100 d-flex align-items-center justify-content-center gap-4"
+							>
+								<div class="nav-catalog d-flex align-items-center gap-2">
+									<button id="navbar_btn" class="">
+										<i class="uil uil-bars"></i>
+									</button>
+									<a href="catalog.html">Каталог</a>
+								</div>
+								<div class="nav-input w-75">
+									<form>
+										<input placeholder="Найти товар" type="text" />
+										<i class="uil uil-search"></i>
+									</form>
+								</div>
+							</div>
+							<div class="nav-right d-flex align-items-center gap-5">
+								<div class="nav__menus-icons d-flex gap-4">
+									<div
+										class="nav__menu-icon d-flex flex-column align-items-center"
+									>
+										<i class="uil uil-heart"></i>
+										<p class="m-0">Избранное</p>
+									</div>
+									<div
+										class="nav__menu-icon d-flex flex-column align-items-center"
+									>
+										<i class="uil uil-box"></i>
+										<p class="m-0">Заказы</p>
+									</div>
+									<div
+										class="nav__menu-icon d-flex flex-column align-items-center"
+									>
+										<button>
+											<i class="uil uil-shopping-cart"
+												><span class="nav-badge">0</span></i
+											>
+										</button>
+										<p class="m-0">Корзина</p>
+									</div>
+								</div>
+								<div
+									class="nav__menu-icon d-flex flex-column align-items-center"
+								>
+									<a href="basket.html" type="button">
+										<i class="uil uil-shopping-cart">
+											<span class="cart nav-badge"></span>
+										</i>
+									</a>
+									<p class="m-0">Корзина</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbarr">
+					<div class="navbar">
+						<div id="navbarMenu" class="navbar-menus">
+							<div class="container">
+								<ul class="navbar-nav m-0">
+									<div class="nav__item-menus">
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html"
+												>Молоко, сыр, яйцо</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Хлеб</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Фрукты и овощи</a
+											>
+										</li>
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html"
+												>Замороженные продукты</a
+											>
+										</li>
+									</div>
+									<div class="nav__item-menus">
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html">Напитки</a>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Кондитерские изделия</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Чай, кофе</a
+											>
+										</li>
+									</div>
+									<div class="nav__item-menus">
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html">Бакалея</a>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Здоровое питание</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Зоотовары</a
+											>
+										</li>
+									</div>
+									<div class="nav__item-menus">
+										<li class="nav-item custom_item-btn">
+											<a class="nav-link" href="catalog.html"
+												>Непродовольственные товары</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Детское питание</a
+											>
+										</li>
+										<li class="nav-item custom-item">
+											<a class="nav-link custom-navlink" href="catalog.html"
+												>Мясо, птица, колбаса</a
+											>
+										</li>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main id="margin_top">
+			<section>
+				<div class="container">
+					<div class="page-links d-flex gap-3 align-items-center">
+						<a href="index.html"><span class="m-0">Главная</span></a>
+						<span><img src="images/right-arrow.svg" alt="" /></span>
+						<a href="catalog.html"><p class="m-0">Каталог</p></a>
+					</div>
+				</div>
+				<div class="container catalog-head">
+					<h2>Молоко, сыр, яйцо</h2>
+				</div>
+				<div class="container">
+					<div id="products" class="d-flex gap-4">
+						<h5>Товары нашего производства</h5>
+						<h5>Полезное производства</h5>
+						<h5>Без ГМО</h5>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="milk-category d-flex flex-column flex-md-row">
+						<div class="milk-filter w-25">
+							<h4>Фильтр</h4>
+							<div class="milk_filter-price">
+								<div
+									class="filter_inputs-head d-flex justify-content-between align-items-center"
+								>
+									<p>Цена</p>
+									<button id="filter-clear">Очистить</button>
+								</div>
+								<div class="filter-inputs">
+									<form class="d-flex align-items-center">
+										<input class="w-50" value="1" type="text" />
+										<span></span>
+										<input class="w-50" value="100" type="text" />
+									</form>
+									<form>
+										<input type="range" />
+									</form>
+								</div>
+								<div class="milk_filter-type">
+									<p>Молоко</p>
+									<p>Сливки</p>
+									<p>Яйцо</p>
+								</div>
+							</div>
+							<div class="milk_filter-in-stock">
+								<button id="check">
+									<span></span>
+								</button>
+								<p>В наличии</p>
+							</div>
+							<button id="apply">Применить</button>
+						</div>
+						<div class="milk-right w-75">
+							<div class="milk_products-btn d-flex">
+								<button
+									class="d-flex align-items-center justify-content-between gap-2"
+								>
+									Фильтр 4 <i class="uil uil-times"></i>
+								</button>
+								<button
+									class="d-flex align-items-center justify-content-between gap-2"
+								>
+									Цена от 99 до 2599 <i class="uil uil-times"></i>
+								</button>
+								<button
+									class="d-flex align-items-center justify-content-between gap-2"
+								>
+									Очистить фильтры <i class="uil uil-times"></i>
+								</button>
+							</div>
+							<div class="milk-products"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/nav.js"></script>
+		<script src="js/cards.js"></script>
+		<script src="js/category-card.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
