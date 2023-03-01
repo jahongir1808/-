@@ -885,43 +885,43 @@ main .container h2 {
 }
 @media (min-width: 1300px) {
   .catalog-row:nth-child(1) {
-    width: 48%;
+    width: 47.8%;
   }
   .catalog-row:nth-child(2) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(3) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(4) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(5) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(6) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(7) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(8) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(9) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(10) {
-    width: 48%;
+    width: 47.8%;
   }
   .catalog-row:nth-child(11) {
-    width: 22.5%;
+    width: 22%;
   }
   .catalog-row:nth-child(12) {
     width: 48%;
   }
   .catalog-row:nth-child(13) {
-    width: 22.5%;
+    width: 22%;
   }
 }
 

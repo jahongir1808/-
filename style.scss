@@ -287,7 +287,7 @@ header {
 }
 
 .navbar-menus {
-	display: none;
+	display: none;																	
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -904,43 +904,43 @@ main {
 	}
 	@media (min-width: 1300px) {
 		&:nth-child(1) {
-			width: 48%;
+			width: 47.8%;
 		}
 		&:nth-child(2) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(3) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(4) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(5) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(6) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(7) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(8) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(9) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(10) {
-			width: 48%;
+			width: 47.8%;
 		}
 		&:nth-child(11) {
-			width: 22.5%;
+			width: 22%;
 		}
 		&:nth-child(12) {
 			width: 48%;
 		}
 		&:nth-child(13) {
-			width: 22.5%;
+			width: 22%;
 		}
 	}
 }
