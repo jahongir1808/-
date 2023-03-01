@@ -20,6 +20,7 @@ function addProductToCart(id) {
 	}
 	setCart()
 	getCart()
+	window.location.reload()
 }
 
 function getCart() {
