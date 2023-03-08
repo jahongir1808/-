@@ -9,6 +9,7 @@ const products = [
 		rating: 5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food0',
+		isLiked: false,
 	},
 	{
 		name: 'Banana',
@@ -22,6 +23,7 @@ const products = [
 		rating: 5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food1',
+		isLiked: false,
 	},
 	{
 		name: 'Bread',
@@ -33,6 +35,7 @@ const products = [
 		rating: 5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food2',
+		isLiked: false,
 	},
 	{
 		name: 'Broccoli',
@@ -44,6 +47,7 @@ const products = [
 		rating: 4.5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food3',
+		isLiked: false,
 	},
 	{
 		name: 'Carrot',
@@ -55,6 +59,7 @@ const products = [
 		rating: 5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food4',
+		isLiked: false,
 	},
 	{
 		name: 'Cheese',
@@ -66,6 +71,7 @@ const products = [
 		rating: 3.5,
 		discount: 50,
 		image: 'https://picsum.photos/200/300/?food5',
+		isLiked: false,
 	},
 	{
 		name: 'Chicken',
@@ -77,6 +83,7 @@ const products = [
 		rating: 3.5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food6',
+		isLiked: false,
 	},
 	{
 		name: 'Chocolate',
@@ -88,6 +95,7 @@ const products = [
 		rating: 4.5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food7',
+		isLiked: false,
 	},
 	{
 		name: 'Coffee',
@@ -99,6 +107,7 @@ const products = [
 		rating: 5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food8',
+		isLiked: false,
 	},
 	{
 		name: 'Egg',
@@ -110,6 +119,7 @@ const products = [
 		rating: 4.5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food9',
+		isLiked: false,
 	},
 	{
 		name: 'Fish',
@@ -121,6 +131,7 @@ const products = [
 		rating: 3.5,
 		discount: 50,
 		image: 'https://picsum.photos/200/300/?food10',
+		isLiked: false,
 	},
 	{
 		name: 'Grapes',
@@ -132,6 +143,7 @@ const products = [
 		rating: 4,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food11',
+		isLiked: false,
 	},
 	{
 		name: 'Hamburger',
@@ -143,6 +155,7 @@ const products = [
 		rating: 5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food12',
+		isLiked: false,
 	},
 	{
 		name: 'Hot dog',
@@ -154,6 +167,7 @@ const products = [
 		rating: 4.5,
 		discount: 50,
 		image: 'https://picsum.photos/200/300/?food13',
+		isLiked: false,
 	},
 	{
 		name: 'Ice cream',
@@ -165,6 +179,7 @@ const products = [
 		rating: 4.5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food14',
+		isLiked: false,
 	},
 	{
 		name: 'Lemon',
@@ -176,6 +191,7 @@ const products = [
 		rating: 3.5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food15',
+		isLiked: false,
 	},
 	{
 		name: 'Eggs',
@@ -187,6 +203,7 @@ const products = [
 		rating: 4.5,
 		discount: 50,
 		image: 'https://picsum.photos/200/300/?food16',
+		isLiked: false,
 	},
 	{
 		name: 'Honey',
@@ -198,6 +215,7 @@ const products = [
 		rating: 4,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food17',
+		isLiked: false,
 	},
 	{
 		name: 'Ice Cream',
@@ -209,6 +227,7 @@ const products = [
 		rating: 4.5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food18',
+		isLiked: false,
 	},
 	{
 		name: 'Jelly',
@@ -220,6 +239,7 @@ const products = [
 		rating: 5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food19',
+		isLiked: false,
 	},
 	{
 		name: 'Ketchup',
@@ -231,6 +251,7 @@ const products = [
 		rating: 5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food20',
+		isLiked: false,
 	},
 	{
 		name: 'Mango',
@@ -242,6 +263,7 @@ const products = [
 		rating: 5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food21',
+		isLiked: false,
 	},
 	{
 		name: 'Noodles',
@@ -253,6 +275,7 @@ const products = [
 		rating: 3.5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food22',
+		isLiked: false,
 	},
 	{
 		name: 'Oatmeal',
@@ -264,6 +287,7 @@ const products = [
 		rating: 4.5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food23',
+		isLiked: false,
 	},
 	{
 		name: 'Bacon',
@@ -275,6 +299,7 @@ const products = [
 		rating: 3.5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food24',
+		isLiked: false,
 	},
 	{
 		name: 'Pancakes',
@@ -286,6 +311,7 @@ const products = [
 		rating: 4,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food25',
+		isLiked: false,
 	},
 	{
 		name: 'Waffles',
@@ -297,6 +323,7 @@ const products = [
 		rating: 4.5,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food26',
+		isLiked: false,
 	},
 	{
 		name: 'Fried Rice',
@@ -308,6 +335,7 @@ const products = [
 		rating: 4,
 		discount: 20,
 		image: 'https://picsum.photos/200/300/?food27',
+		isLiked: false,
 	},
 	{
 		name: 'Spaghetti',
@@ -319,6 +347,7 @@ const products = [
 		rating: 4,
 		discount: 50,
 		image: 'https://picsum.photos/200/300/?food28',
+		isLiked: false,
 	},
 	{
 		name: 'Pizza',
@@ -330,6 +359,7 @@ const products = [
 		rating: 4,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food29',
+		isLiked: false,
 	},
 	{
 		name: 'Grilled Cheese',
@@ -341,6 +371,7 @@ const products = [
 		rating: 5,
 		discount: 50,
 		image: 'https://picsum.photos/200/300/?food30',
+		isLiked: false,
 	},
 	{
 		name: 'Steak',
@@ -353,6 +384,7 @@ const products = [
 		rating: 4.5,
 		discount: 20,
 		image: 'images/dinner-img1.png',
+		isLiked: false,
 	},
 	{
 		name: 'Salmon',
@@ -364,6 +396,7 @@ const products = [
 		rating: 4.5,
 		discount: 20,
 		image: 'images/dinner-img2.png',
+		isLiked: false,
 	},
 	{
 		name: 'Chicken Alfredo',
@@ -375,6 +408,7 @@ const products = [
 		rating: 4,
 		discount: 20,
 		image: 'images/dinner-img3.png',
+		isLiked: false,
 	},
 	{
 		name: 'Lasagna',
@@ -386,6 +420,7 @@ const products = [
 		rating: 5,
 		discount: 0,
 		image: 'images/dinner-img4.png',
+		isLiked: false,
 	},
 	{
 		name: 'Chocolate Chip Cookies',
@@ -397,6 +432,7 @@ const products = [
 		rating: 3.5,
 		discount: 0,
 		image: 'https://picsum.photos/200/300/?food35',
+		isLiked: false,
 	},
 ]
 
@@ -458,3 +494,5 @@ let parse_card = JSON.parse(category_card)
 products
 	.filter(product => parse_card.category === product.category)
 	.forEach(product => (milkCard.innerHTML += getCategoryCards(product)))
+
+

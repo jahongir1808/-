@@ -5,6 +5,10 @@ const cart_local = localStorage.getItem('cart')
 
 let cart = JSON.parse(cart_local) || []
 
+const favorite_cart_local = localStorage.getItem('isLiked')
+
+let favorite_cart = JSON.parse(favorite_cart_local) || []
+
 function addProductToCart(id) {
 	let product = search_card_products.find(product => product.id === id)
 	if (cart.find(el => el.id == id)) {
@@ -33,4 +37,10 @@ getCart()
 
 function setCart() {
 	localStorage.setItem('cart', JSON.stringify(cart))
+}
+
+function isLikeBtn(id) {
+	let favorite_cards = search_card_products.find(el => el.id == id)
+	favorite_cart.push(favorite_cards)
+	localStorage.setItem('isLiked', JSON.stringify(favorite_cart))
 }

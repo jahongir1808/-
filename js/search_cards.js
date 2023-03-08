@@ -1,6 +1,7 @@
 let productsContainer = document.querySelector('.search-cards')
 const search = document.querySelector('.search')
 const results = document.querySelector('.results')
+const isLikedBtn = document.getElementById('liked-btn')
 
 const search_card_products = [
 	{
@@ -10,6 +11,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
 		rating: 3.5,
+		isLiked: false,
 	},
 	{
 		id: 1,
@@ -18,6 +20,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...',
 		rating: 3,
+		isLiked: false,
 	},
 	{
 		id: 2,
@@ -26,6 +29,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
 		rating: 5,
+		isLiked: false,
 	},
 	{
 		id: 3,
@@ -34,6 +38,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
 		rating: 4,
+		isLiked: false,
 	},
 	{
 		id: 4,
@@ -42,6 +47,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
 		rating: 2,
+		isLiked: false,
 	},
 	{
 		id: 5,
@@ -50,6 +56,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...',
 		rating: 3,
+		isLiked: false,
 	},
 	{
 		id: 6,
@@ -58,6 +65,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
 		rating: 5,
+		isLiked: false,
 	},
 	{
 		id: 7,
@@ -66,6 +74,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
 		rating: 4,
+		isLiked: false,
 	},
 	{
 		id: 8,
@@ -74,6 +83,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
 		rating: 2,
+		isLiked: false,
 	},
 	{
 		id: 9,
@@ -82,6 +92,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...',
 		rating: 3,
+		isLiked: false,
 	},
 	{
 		id: 10,
@@ -90,6 +101,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
 		rating: 5,
+		isLiked: false,
 	},
 	{
 		id: 11,
@@ -98,6 +110,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
 		rating: 4,
+		isLiked: false,
 	},
 	{
 		id: 12,
@@ -106,6 +119,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
 		rating: 2,
+		isLiked: false,
 	},
 	{
 		id: 13,
@@ -114,6 +128,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...',
 		rating: 3,
+		isLiked: false,
 	},
 	{
 		id: 14,
@@ -122,6 +137,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
 		rating: 4.5,
+		isLiked: false,
 	},
 	{
 		id: 15,
@@ -130,6 +146,7 @@ const search_card_products = [
 		name_price: '50.50 ₽',
 		desc: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
 		rating: 3.5,
+		isLiked: false,
 	},
 ]
 
@@ -160,7 +177,12 @@ function getSearchCard(id, img, price, pricetwo, desc, rating) {
 
 	return `          
   <div class="search-card">
-    <img src="${img}" alt="" />
+    <div class='search_card-img'>
+		<img src="${img}" alt="" />
+			<button id='liked-btn' onclick='isLikeBtn(${id})'> 
+				<img class='like_img' src='./images/like.png' width=''/> 
+			</button>
+		</div>
     <div class="search-content">
       <div class="search-prices">
         <div class="search-price d-flex align-items-center">
@@ -195,6 +217,7 @@ function getProducts(products) {
 			el.name_price,
 			el.desc,
 			el.rating,
+			el.isLiked
 		)
 	}
 	results.innerHTML = products.length
@@ -215,3 +238,5 @@ search.addEventListener('input', function () {
 	}
 	getProducts(res)
 })
+
+const like_img = document.querySelector('.like_img')
