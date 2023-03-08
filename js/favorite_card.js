@@ -25,34 +25,34 @@ function getFavoriteCards(id, img, name, name_price, desc, rating) {
 		return res
 	}
 	return `          
-  <div class="search-card">
-    <div class='search_card-img'>
-		<img src="${img}" alt="" />
-			<button id='liked-btn' onclick='isLikeBtn(${id})'> 
-				<img class='like_img' src='./images/like.png' width=''/> 
-			</button>
+		<div class="search-card">
+			<div class='search_card-img'>
+			<img src="${img}" alt="" />
+				<button id='liked-btn' onclick='isLikeBtn(${id})'> 
+					<img class='like_img' src='./images/like.png' width=''/> 
+				</button>
+			</div>
+			<div class="search-content">
+				<div class="search-prices">
+					<div class="search-price d-flex align-items-center justify-content-between">
+						<h5>${name}</h5>
+						<h6>${name_price}</h6>
+					</div>
+					<div class="search-payment d-flex align-items-center justify-content-between">
+						<p>С картой</p>
+						<p>Обычная</p>
+					</div>
+				</div>
+				<div class="search-description">
+					<p>${desc}</p>
+				</div>
+				<div class="search-rating">
+				${getFavoriteRating(rating)}
+				</div>
+				<div class="search-button">
+				<button onclick="addProductToCart(${id})" class="search-btn">В Корзину</button>
+			</div>
 		</div>
-    <div class="search-content">
-      <div class="search-prices">
-        <div class="search-price d-flex align-items-center justify-content-between">
-          <h5>${name}</h5>
-          <h6>${name_price}</h6>
-        </div>
-        <div class="search-payment d-flex align-items-center justify-content-between">
-          <p>С картой</p>
-          <p>Обычная</p>
-        </div>
-      </div>
-      <div class="search-description">
-        <p>${desc}</p>
-      </div>
-      <div class="search-rating">
-      ${getFavoriteRating(rating)}
-      </div>
-      <div class="search-button">
-      <button onclick="addProductToCart(${id})" class="search-btn">В Корзину</button>
-    </div>
-   </div>
   </div>`
 }
 
