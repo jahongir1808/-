@@ -16,7 +16,7 @@ btn.addEventListener('click', openMenu)
 
 const footer_btn = document.getElementById('footer__btn')
 
-let b = 0
+let b = 1
 
 function openFooter() {
 	if (b == 1) {

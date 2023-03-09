@@ -31,7 +31,9 @@
 							<div
 								class="nav-middle w-100 d-flex align-items-center justify-content-center gap-4"
 							>
-								<div class="nav-catalog d-flex align-items-center gap-2">
+								<div
+									class="nav-catalog d-none d-sm-flex align-items-center gap-2"
+								>
 									<button id="navbar_btn" class="">
 										<i class="uil uil-bars"></i>
 									</button>
@@ -39,7 +41,11 @@
 								</div>
 								<div class="nav-input w-75">
 									<form>
-										<input placeholder="Найти товар" type="text" />
+										<input
+											class="search"
+											placeholder="Найти товар"
+											type="text"
+										/>
 										<i class="uil uil-search"></i>
 									</form>
 								</div>
@@ -50,7 +56,11 @@
 										class="nav__menu-icon d-flex flex-column align-items-center"
 									>
 										<a href="favorite.html">
-											<i class="uil uil-heart"></i>
+											<i class="uil uil-heart">
+												<div class="nav-badge">
+													<span class="favourite">0</span>
+												</div>
+											</i>
 										</a>
 										<p class="m-0">Избранное</p>
 									</div>
@@ -59,7 +69,7 @@
 											href="result-search.html"
 											class="d-flex flex-column align-items-center"
 										>
-											<i class="uil uil-box"> </i>
+											<i class="uil uil-box"></i>
 											<p class="m-0">Продукты</p>
 										</a>
 									</div>
@@ -68,7 +78,9 @@
 									>
 										<a href="basket.html" type="button">
 											<i class="uil uil-shopping-cart">
-												<span class="cart nav-badge"></span>
+												<div class="nav-badge">
+													<span class="cart"></span>
+												</div>
 											</i>
 										</a>
 										<p class="m-0">Корзина</p>
@@ -219,19 +231,21 @@
 						<img src="images/bottom-menu.svg" alt="" />
 						Каталог
 					</button>
-					<button class="d-flex flex-column align-items-center">
+					<a href="favorite.html" class="d-flex flex-column align-items-center">
 						<img src="images/bottom-heart.svg" alt="" />
 						Избранное
-					</button>
+					</a>
 					<button class="d-flex flex-column align-items-center">
 						<img src="images/bottom-box.svg" alt="" />
-						Заказы
+						Продукты
 					</button>
-					<button class="d-flex flex-column align-items-center">
+					<a href="basket.html" class="d-flex flex-column align-items-center">
 						<img src="images/bottom-cart.svg" alt="" />
 						Корзина
+					</a>
+					<button id="popup_bottom-menu">
+						<img src="images/nav-avatar.svg" alt="" />
 					</button>
-					<img src="images/bottom-logo.svg" alt="" />
 				</div>
 			</div>
 			<div class="container">
@@ -365,6 +379,7 @@
 				</div>
 			</div>
 		</footer>
+		<script src="js/common.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/cards.js"></script>
 		<script src="js/main.js"></script>

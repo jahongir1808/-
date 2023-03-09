@@ -454,7 +454,7 @@ footer .footer .footer__bottom-logo p {
     display: none;
   }
 }
-.bottom__fixed-menu .bottom__fixed-btns button {
+.bottom__fixed-menu .bottom__fixed-btns button, .bottom__fixed-menu .bottom__fixed-btns a {
   border: none;
   background-color: transparent;
   font-style: normal;
